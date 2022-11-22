@@ -1,5 +1,7 @@
 # MHC-GENO
 This R code is intended for aiding in the genotyping of highly variable genomic regions such as the Major Histocompatibility Complex.
+MHC-GENo is divided in two parts. MHC-GENO-stats (produces an intermediate file) and MHC-GENO-final (produces the final output).
+The intermediate files from MHC-GENO are used as input in MHC-GENO-final.
 
 The input can be one or multiple .fastq files. 
 The final output is a per-sample file containing all the unique sequences along with their relative frequency and length in bp. 
