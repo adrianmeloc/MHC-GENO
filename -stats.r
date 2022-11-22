@@ -32,7 +32,7 @@ for (i in 1:96)
   lista_noprim[[i]]<-sub(".*GTGCTGCAGGTGTAAACTTGTACCAG *(.*?) *CAACTCTACCGCTGCTACCGGATCCGTG*", "\\1", lista_seqfreq[[i]]$Var1)
   lista_seqfreq[[i]]$Var1<-lista_noprim[[i]]
   lista_seqfreq[[i]]$Percent<-lista_seqfreq[[i]]$Freq/((nrow(lista_inicial[[i]]))/4)
-  write.table(lista_seqfreq[[i]], (paste("seqdqa_exon2_",i,".txt",sep = "")), sep="\t", quote=FALSE, row.names = FALSE)
+  write.table(lista_seqfreq[[i]], (paste("seqdrb_exon2_",i,".txt",sep = "")), sep="\t", quote=FALSE, row.names = FALSE)
 }
 
 #line28: reads files based on the name pattern, this has to be adjusted according to the names of the samples used.
